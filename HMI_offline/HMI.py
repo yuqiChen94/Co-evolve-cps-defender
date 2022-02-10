@@ -166,6 +166,7 @@ class HMI_ait:
         self.AH = 0
         self.AL = 0
         self.ALL = 0
+        self.Pv = 0
     def set_alarm(self):
         if type(self.Pv) != type('a'):
             self.AHH, self.AH, self.AL, self.ALL = ALM(self.Pv, self.SAHH, self.SAH, self.SAL, self.SALL)
